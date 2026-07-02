@@ -1,1 +1,1 @@
-# portfolio
+split the page into 4 left 3 parts contain name and Summary right 1 port i will push image laper

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #007bff; /* A professional, lighter blue */
+  --secondary-color: #89cff0; /* A soft, light blue for gradients */
+  --background-color: #f8f9fa; /* A very light grey background */
+  --text-color: #343a40; /* A darker grey for text */
+  --card-bg: #ffffff;
+  --shadow: 0 8px 15px rgba(0,0,0,0.07);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: var(--text-color);
+  line-height: 1.6;
+  /* Layer a semi-transparent image pattern on top of the fixed gradient */
+  background-image: url('code.png'), linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 900px, cover;
+  /* Add a subtle blend mode to help the pattern integrate with the gradient */
+  background-blend-mode: overlay;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* Hero Section */
+.hero {
+  background-color: transparent; /* Make hero section transparent */
+  color: white;
+  height: 100vh; /* Use height instead of min-height for a full-screen section */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 3; /* Takes 3 parts of the space */
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text .summary {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.hero-image {
+  flex: 1; /* Takes 1 part of the space */
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: var(--shadow);
+}
+
+.cta-button {
+  background-color: white;
+  color: var(--primary-color);
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  background-color: #f0f0f0;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Education Section */
+.education-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.education-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-align: left;
+  border-left: 5px solid var(--primary-color);
+}
+
+.education-degree {
+  font-style: italic;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.education-dates {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Certifications Section */
+.certifications-section {
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.certifications-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certification-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.certification-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
