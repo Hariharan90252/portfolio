@@ -1,106 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HariHaran - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Animate On Scroll (AOS) library for animations -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hariharan PK - Full-Stack Developer</title>
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+   <!-- Custom Styles -->
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <header class="site-header">
+       <nav class="main-nav">
+           <a href="#hero" class="nav-name">Hariharan PK</a>
+           <ul class="nav-links">
+               <li><a href="#about">About</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#achievements">Achievements</a></li>
+               <li><a href="#art">3D Art</a></li>
+               <li><a href="#contact">Contact</a></li>
+           </ul>
+       </nav>
+   </header>
 
-  <header class="hero">
-    <div class="hero-content">
-      <div class="hero-text" data-aos="fade-right">
-        <h1>Hariharan</h1>
-        <p class="summary">
-          Experienced and world-class software engineering coding assistant.
-          Specializing in web applications, backend services, and creating seamless user experiences.
-        </p>
-        <a href="#projects" class="cta-button">View My Work</a>
-      </div>
-      <div class="hero-image" data-aos="fade-left">
-        <!-- Placeholder for your image. You can replace the src with your photo -->
-        <img src="https://via.placeholder.com/400" alt="Your Name">
-      </div>
-    </div>
-  </header>
+   <main>
+       <section id="hero" class="hero-section scroll-reveal">
+           <p class="eyebrow mono-text status-online">
+               <span class="status-dot blinking"></span> STATUS: ONLINE
+           </p>
+           <h1 class="display-text">Hariharan PK</h1>
+           <p class="tagline">Full-Stack Developer | Building Practical, Secure & Intelligent Applications</p>
+           <p class="sub-line">Final-year B.Tech IT student, V.S.B Engineering College, Karur</p>
+           <div class="hero-buttons">
+               <a href="#projects" class="button primary-button">View Projects</a>
+               <a href="#" class="button secondary-button">Resume <!-- TODO: add resume link --></a>
+               <a href="#contact" class="button secondary-button">Contact</a>
+           </div>
+           <div class="staggered-dots">
+               <span class="stagger-dot" style="--signal-color: var(--signal-ai);"></span>
+               <span class="stagger-dot" style="--signal-color: var(--signal-security);"></span>
+               <span class="stagger-dot" style="--signal-color: var(--signal-comms);"></span>
+               <span class="stagger-dot" style="--signal-color: var(--signal-utility);"></span>
+               <span class="stagger-dot" style="--signal-color: var(--signal-sustain);"></span>
+           </div>
+       </section>
 
-  <main id="projects" class="projects-section">
-    <h2 data-aos="fade-up">My Projects</h2>
-    <div class="project-grid">
+       <section id="about" class="about-section section-padding scroll-reveal">
+           <h2 class="section-title display-text">About Me</h2>
+           <p>I'm a final-year B.Tech Information Technology student at V.S.B Engineering College, Karur. I like turning real problems into working software — from AI-powered placement tools to secure record-keeping systems and sustainability trackers.</p>
+           <p>I recently completed an internship with Infosys Springboard, and I'm currently preparing for software development roles.</p>
+       </section>
 
-      <!-- Project 1: VoiceNet -->
-      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-        <h3>VoiceNet</h3>
-        <p>A real-time voice messaging application using WebSockets, Node.js, and Express for instant communication.</p>
-        <a href="https://github.com/Hariharan90252/VoiceNet" class="project-link" target="_blank">View Project</a>
-      </div>
+       <section id="skills" class="skills-section section-padding scroll-reveal">
+           <h2 class="section-title display-text">Skills</h2>
+           <div class="skills-grid">
+               <div class="skill-group">
+                   <p class="eyebrow mono-text">LANGUAGES</p>
+                   <div class="skill-pills">
+                       <span class="skill-pill"><span class="skill-dot"></span>Java</span>
+                       <span class="skill-pill"><span class="skill-dot"></span>JavaScript</span>
+                   </div>
+               </div>
+               <div class="skill-group">
+                   <p class="eyebrow mono-text">FRONTEND</p>
+                   <div class="skill-pills">
+                       <span class="skill-pill"><span class="skill-dot"></span>React</span>
+                       <span class="skill-pill"><span class="skill-dot"></span>HTML/CSS</span>
+                   </div>
+               </div>
+               <div class="skill-group">
+                   <p class="eyebrow mono-text">BACKEND</p>
+                   <div class="skill-pills">
+                       <span class="skill-pill"><span class="skill-dot"></span>Node.js</span>
+                       <span class="skill-pill"><span class="skill-dot"></span>Express</span>
+                   </div>
+               </div>
+               <div class="skill-group">
+                   <p class="eyebrow mono-text">DATABASE</p>
+                   <div class="skill-pills">
+                       <span class="skill-pill"><span class="skill-dot"></span>MongoDB</span>
+                       <span class="skill-pill"><span class="skill-dot"></span>SQL</span>
+                   </div>
+               </div>
+               <div class="skill-group">
+                   <p class="eyebrow mono-text">TOOLS</p>
+                   <div class="skill-pills">
+                       <span class="skill-pill"><span class="skill-dot"></span>Git/GitHub</span>
+                       <span class="skill-pill"><span class="skill-dot"></span>Docker</span>
+                       <span class="skill-pill"><span class="skill-dot"></span>VS Code</span>
+                   </div>
+               </div>
+           </div>
+       </section>
 
-      <!-- Project 2: Medical History -->
-      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Medical History</h3>
-        <p>A secure web platform for managing patient medical records with a dual-role system for patients and doctors, built with Node.js and MongoDB.</p>
-        <a href="https://github.com/Hariharan90252/Medical_History" class="project-link" target="_blank">View Project</a>
-      </div>
+       <section id="projects" class="projects-section section-padding scroll-reveal">
+           <h2 class="section-title display-text">Projects</h2>
+           <div class="projects-grid">
+               <article class="project-card scroll-reveal" data-signal-color="var(--signal-ai)">
+                   <div class="project-bar"></div>
+                   <p class="eyebrow mono-text project-status">
+                       <span class="status-dot" style="background-color: var(--signal-ai);"></span> AI PROJECT
+                   </p>
+                   <h3 class="project-title">PrepPath</h3>
+                   <p class="project-description">Multi-agent AI platform for placement readiness — resume analysis, skill-gap detection, and mock interviews with automated scoring.</p>
+                   <div class="tech-tags">
+                       <span class="tech-tag">MERN</span>
+                       <span class="tech-tag">Tailwind CSS</span>
+                       <span class="tech-tag">Recharts</span>
+                   </div>
+                   <div class="project-links">
+                       <a href="https://prep-path-client.onrender.com" target="_blank" rel="noopener noreferrer" class="button project-button">Live</a>
+                       <a href="#" class="button project-button">GitHub <!-- TODO: add PrepPath repo link --></a>
+                   </div>
+               </article>
 
-      <!-- Project 3: Personal Carbon Footprint Application -->
-      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-        <h3>Personal Carbon Footprint Application</h3>
-        <p>An application to calculate and track your personal carbon footprint, helping to promote environmental awareness.</p>
-        <a href="https://github.com/springboardmentor8888/Personal_Carbon_Footprint_Application" class="project-link" target="_blank">View Project</a>
-      </div>
+               <article class="project-card scroll-reveal" data-signal-color="var(--signal-security)">
+                   <div class="project-bar"></div>
+                   <p class="eyebrow mono-text project-status">
+                       <span class="status-dot" style="background-color: var(--signal-security);"></span> SECURITY APP
+                   </p>
+                   <h3 class="project-title">Medical_History</h3>
+                   <p class="project-description">Patient–doctor records system with OTP-based secure access sharing — hardened against several real security vulnerabilities found during development.</p>
+                   <div class="tech-tags">
+                       <span class="tech-tag">Node.js</span>
+                       <span class="tech-tag">Express</span>
+                       <span class="tech-tag">MongoDB</span>
+                   </div>
+                   <div class="project-links">
+                       <a href="https://github.com/Hariharan90252/Medical_History" target="_blank" rel="noopener noreferrer" class="button project-button">GitHub</a>
+                   </div>
+               </article>
 
+               <article class="project-card scroll-reveal" data-signal-color="var(--signal-comms)">
+                   <div class="project-bar"></div>
+                   <p class="eyebrow mono-text project-status">
+                       <span class="status-dot" style="background-color: var(--signal-comms);"></span> COMMS TOOL
+                   </p>
+                   <h3 class="project-title">VoiceNet</h3>
+                   <p class="project-description">LAN/WiFi web app letting workers and instructors record and share audio clips on a shared page, for clear real-time communication on-site.</p>
+                   <div class="tech-tags">
+                       <span class="tech-tag">JavaScript</span>
+                       <span class="tech-tag">LAN Audio</span>
+                   </div>
+                   <div class="project-links">
+                       <a href="https://github.com/Hariharan90252/VoiceNet" target="_blank" rel="noopener noreferrer" class="button project-button">GitHub</a>
+                   </div>
+               </article>
 
-      <!-- Add more projects here -->
+               <article class="project-card scroll-reveal" data-signal-color="var(--signal-utility)">
+                   <div class="project-bar"></div>
+                   <p class="eyebrow mono-text project-status">
+                       <span class="status-dot" style="background-color: var(--signal-utility);"></span> UTILITY APP
+                   </p>
+                   <h3 class="project-title">Floating_Time</h3>
+                   <p class="project-description">Lightweight Java desktop app that keeps an always-on-top floating clock and date display.</p>
+                   <div class="tech-tags">
+                       <span class="tech-tag">Java</span>
+                   </div>
+                   <div class="project-links">
+                       <a href="https://github.com/Hariharan90252/Floating_Time" target="_blank" rel="noopener noreferrer" class="button project-button">GitHub</a>
+                   </div>
+               </article>
 
-    </div>
-  </main>
+               <article class="project-card scroll-reveal" data-signal-color="var(--signal-sustain)">
+                   <div class="project-bar"></div>
+                   <p class="eyebrow mono-text project-status">
+                       <span class="status-dot" style="background-color: var(--signal-sustain);"></span> SUSTAINABILITY
+                   </p>
+                   <h3 class="project-title">Personal Carbon Footprint</h3>
+                   <p class="project-description">Tracks daily carbon emissions and graphs them over time, helping users spot patterns and reduce their impact. Built during an Infosys Springboard internship.</p>
+                   <div class="tech-tags">
+                       <span class="tech-tag"><!-- TODO: add tech stack --></span>
+                   </div>
+                   <div class="project-links">
+                       <a href="https://github.com/springboardmentor8888/Personal_Carbon_Footprint_Application" target="_blank" rel="noopener noreferrer" class="button project-button">GitHub</a>
+                   </div>
+               </article>
+           </div>
+       </section>
 
-  <section class="education-section">
-    <h2 data-aos="fade-up">My Education</h2>
-    <div class="education-grid">
-      <div class="education-card" data-aos="fade-up" data-aos-delay="100">
-        <h3>VSB Enginering College, Karur</h3>
-        <p class="education-degree">Bachelor of Engineering</p>
-        <p class="education-dates">2023 - 2027</p>
-      </div>
-      <div class="education-card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Bharathi Vidhalaya Matric Higher Secondary School, Mulanur</h3>
-        <p class="education-degree">Higher Secondary Education</p>
-        <p class="education-dates">2021 - 2023</p>
-      </div>
-    </div>
-  </section>
+       <section id="achievements" class="achievements-section section-padding scroll-reveal">
+           <h2 class="section-title display-text">Achievements</h2>
+           <ul>
+               <li><strong>Infosys Springboard 6.0</strong> — selected for Infosys' mentorship-driven internship program</li>
+               <li><strong>Active on LeetCode</strong> — <a href="https://leetcode.com/u/hariharan90252/" target="_blank" rel="noopener noreferrer">profile link</a></li>
+           </ul>
+       </section>
 
-  <section class="certifications-section">
-    <h2 data-aos="fade-up">Certifications</h2>
-    <div class="certifications-grid">
-      <div class="certification-card" data-aos="fade-up" data-aos-delay="100">
-        <h3>Internship 6.0 (B 13)</h3>
-        <p>Individual Carbon Footprint Monitoring and Reduction Guidance Application</p>
-      </div>
-      <div class="certification-card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Programming In Java</h3>
-      </div>
-      <div class="certification-card" data-aos="fade-up" data-aos-delay="300">
-        <h3>Introduction to Cybersecurity</h3>
-      </div>
-    </div>
-  </section>
+       <section id="art" class="art-section section-padding scroll-reveal">
+           <h2 class="section-title display-text">3D Art (Blender)</h2>
+           <!-- TODO: replace with real Blender project image, title, and description -->
+           <div class="art-placeholder" style="--signal-color: var(--signal-creative);">
+               <div class="render-preview-box">
+                   <span class="placeholder-icon">🖼️</span>
+                   <p>Render preview coming soon</p>
+               </div>
+               <p class="eyebrow mono-text project-status">
+                   <span class="status-dot" style="background-color: var(--signal-creative);"></span> CREATIVE WORK
+               </p>
+               <h3 class="project-title">[Blender Project Title]</h3>
+               <p class="project-description">[Add a short description of the piece — what it is and what you used to make it]</p>
+           </div>
+       </section>
 
-  <footer class="contact-section" data-aos="fade-in">
-    <h2>Get In Touch</h2>
-    <p>Feel free to reach out for collaborations or just a friendly chat.</p>
-    <a href="mailto:youremail@example.com" class="cta-button">Say Hello</a>
-  </footer>
+       <section id="contact" class="contact-section section-padding scroll-reveal">
+           <h2 class="section-title display-text">Contact</h2>
+           <div class="contact-links">
+               <a href="mailto:haranpkhari765@gmail.com" class="contact-button" aria-label="Email Hariharan PK">
+                   <span class="contact-icon">📧</span>
+                   <span class="contact-label mono-text">EMAIL</span>
+               </a>
+               <a href="https://www.linkedin.com/in/hariharan-p-k/" target="_blank" rel="noopener noreferrer" class="contact-button" aria-label="LinkedIn Profile">
+                   <span class="contact-icon">🔗</span>
+                   <span class="contact-label mono-text">LINKEDIN</span>
+               </a>
+               <a href="https://github.com/Hariharan90252" target="_blank" rel="noopener noreferrer" class="contact-button" aria-label="GitHub Profile">
+                   <span class="contact-icon">🐙</span>
+                   <span class="contact-label mono-text">GITHUB</span>
+               </a>
+               <a href="https://leetcode.com/u/hariharan90252/" target="_blank" rel="noopener noreferrer" class="contact-button" aria-label="LeetCode Profile">
+                   <span class="contact-icon">💻</span>
+                   <span class="contact-label mono-text">LEETCODE</span>
+               </a>
+           </div>
+       </section>
+   </main>
 
-  <!-- AOS library script -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000 }); // Initialize AOS with a 1-second animation duration
-  </script>
+   <footer class="site-footer">
+       <p>Built by Hariharan PK &copy; <span id="current-year"></span></p>
+   </footer>
 
+   <script src="script.js"></script>
 </body>
 </html>
