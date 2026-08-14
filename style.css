@@ -220,6 +220,16 @@ p {
    white-space: nowrap; /* Prevent wrapping on small screens */
 }
 
+.header-profile-image {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 2px solid var(--surface);
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   margin-left: var(--spacing-md);
+}
+
 .nav-links {
    list-style: none;
    display: flex;
@@ -505,37 +515,23 @@ p {
    border-top: 8px solid var(--signal-creative); /* Top bar for creative signal */
 }
 
-.render-preview-box {
+#blender-canvas {
    width: 100%;
-   padding-top: 56.25%; /* 16:9 Aspect Ratio */
-   position: relative;
-   border: 2px dashed var(--text-muted);
-   border-radius: 4px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   height: 450px; /* Default height */
    margin-bottom: var(--spacing-lg);
-   color: var(--text-muted);
-   font-family: var(--font-mono);
-   font-size: 1rem;
+   border-radius: 4px; /* Match other elements */
+   display: block; /* Ensure canvas behaves like a block element */
+   cursor: grab;
+   transition: opacity 0.3s ease-in-out;
 }
 
-.render-preview-box .placeholder-icon {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 3rem;
-   line-height: 1;
-}
-
-.render-preview-box p {
-   position: absolute;
-   top: calc(50% + 2.5rem); /* Below the icon */
-   left: 50%;
-   transform: translateX(-50%);
-   white-space: nowrap;
+@media (max-width: 768px) {
+   #blender-canvas {
+       height: 350px; /* Smaller height for mobile */
+   }
+   .header-profile-image {
+       display: none; /* Hide profile image on smaller screens to save space */
+   }
 }
 
 .art-placeholder .project-title {
@@ -624,6 +620,10 @@ p {
 
    .hero-buttons {
        gap: var(--spacing-lg);
+   }
+
+   .header-profile-image {
+       margin-left: auto; /* Push it away from the name */
    }
 
    .skills-grid {
